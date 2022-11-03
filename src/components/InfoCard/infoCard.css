@@ -1,0 +1,28 @@
+.infoCardMain {
+  background: rgba(70, 203, 92, 0.1);
+  /* opacity: 0.1; */
+  border-radius: 30px;
+  max-width: 204px;
+  padding: 1% 2% 1% 2%;
+  width: 100%;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.infoHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.days {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+}
+.dayText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 22px;
+}

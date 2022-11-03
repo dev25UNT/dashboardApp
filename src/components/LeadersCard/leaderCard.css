@@ -1,0 +1,60 @@
+.leaderCard {
+  max-width: 334px !important;
+  height: 401px;
+  background: #faeae8 !important;
+  border-radius: 32px !important;
+  padding: 3%;
+  margin-top: 5%;
+}
+.leaderRow {
+  align-items: center !important;
+}
+.btnMain {
+  background-color: white !important;
+  border-radius: 16px !important;
+  border-color: #fff !important;
+  color: black !important;
+}
+.btnMain:hover {
+  background-color: white !important;
+  border-radius: 16px !important;
+  border-color: #fff !important;
+  color: black !important;
+}
+.mainCol {
+  display: flex;
+  align-items: flex-start;
+}
+.status {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 22px;
+}
+.leaderName {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.btnLeader {
+  width: 66px !important;
+  height: 24px !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  color: black !important;
+  border-color: #fff !important;
+  align-items: center !important;
+  display: flex !important;
+  text-align: center !important;
+}
+.listItem {
+  background: #faeae8 !important;
+}
+.list-group-item {
+  border-color: #fff !important;
+}
+
+.card > .list-group {
+  border-top: none !important;
+}

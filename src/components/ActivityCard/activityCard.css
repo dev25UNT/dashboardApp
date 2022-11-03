@@ -1,0 +1,19 @@
+.activityCard {
+  max-width: 563px;
+  width: 100%;
+  height: 310px;
+  background: #e4e9f9;
+  border-radius: 30px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activityHead {
+  display: flex;
+  justify-content: space-between;
+}
+.weekSection {
+  display: flex;
+  justify-content: space-between;
+}

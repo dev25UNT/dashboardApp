@@ -1,0 +1,15 @@
+.imgCard {
+  max-width: 334px;
+  width: 100%;
+  height: 399px;
+  background: url("../../assets/icons/bgCard.svg");
+  background-repeat: no-repeat;
+  padding: 10% 3%;
+}
+.imgTxt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0e1217;
+}

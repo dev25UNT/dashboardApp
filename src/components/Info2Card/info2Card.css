@@ -1,0 +1,32 @@
+.info2Card {
+  padding: 5%;
+  max-width: 273px;
+  width: 100%;
+  height: 146px;
+  background: #e8f5ea;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 4%;
+}
+.info2Head {
+  display: flex;
+  justify-content: space-between;
+}
+.btnLeader2 {
+  width: 98px !important;
+  height: 24px !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  color: black !important;
+  border-color: #fff !important;
+  align-items: center !important;
+  display: flex !important;
+  text-align: center !important;
+}
+.info2Text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}

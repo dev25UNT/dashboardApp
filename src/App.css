@@ -1,0 +1,91 @@
+.App {
+  background-color: #fff;
+}
+.container {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  max-width: 100% !important;
+  margin-top: 2% !important;
+}
+.activitySection {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.col-8 {
+  width: 70.666667% !important;
+}
+.col-4 {
+  width: 29.33333% !important;
+}
+.col-1 {
+  margin: 0px !important;
+  padding: 0px !important;
+  padding-left: 1% !important;
+}
+.col-11 {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.info2Container {
+  width: 30%;
+}
+
+@media screen and (max-width: 1026px) {
+  .activitySection {
+    flex-direction: column;
+  }
+  .info2Container {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 880px) {
+  .col-1 {
+    width: 4.33333% !important;
+  }
+  .sideContainerMain {
+    display: none !important;
+  }
+  .secondRow {
+    flex-direction: column;
+  }
+  .col-4 {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .col-8 {
+    width: 100% !important;
+  }
+  .title {
+    font-size: 30px !important;
+  }
+  .hstack {
+    flex-wrap: wrap;
+  }
+  .leaderCard {
+    height: auto !important;
+    margin-top: 0px !important;
+  }
+}
+@media screen and (max-width: 625px) {
+  .info2Container {
+    flex-direction: column;
+  }
+  .col-4 {
+    flex-direction: column;
+  }
+  .leaderCard {
+    margin-top: 4% !important;
+  }
+  .emailInfo {
+    flex-direction: column;
+  }
+  .emailPerson {
+    flex-direction: column;
+  }
+}
