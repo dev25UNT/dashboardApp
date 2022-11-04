@@ -1,12 +1,12 @@
 import React from "react";
 import { Stack } from "react-bootstrap";
 import "./infoCard.css";
-import cardIcon from "../../assets/icons/card1Icon.svg";
+// import cardIcon from "../../assets/icons/card1Icon.svg";
 import dots from "../../assets/icons/dotsVertical.svg";
 
-const InfoCard = () => {
+const InfoCard = ({ cardIcon, text1, text2, btnClicked }) => {
   return (
-    <div className="infoCardMain">
+    <div className={btnClicked ? "infoCardEmbla" : "infoCardMain"}>
       <div className="infoHead">
         {/* <Stack direction="horizontal" gap={5}> */}
         <img src={cardIcon} />
@@ -14,8 +14,8 @@ const InfoCard = () => {
       </div>
       {/* </Stack> */}
       <div>
-        <p className="days">24 </p>
-        <p className="dayText">Days in training</p>
+        <p className="days">{text1} </p>
+        <p className="dayText">{text2}</p>
       </div>
     </div>
   );

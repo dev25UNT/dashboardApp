@@ -6,7 +6,7 @@ const ImageCard = () => {
     <div className="imgCard">
       <h3 className="imgTxt">
         inspiring <br />
-        <b>UX/UI Community around the world</b>
+        <span className="bold">UX/UI Community around the world</span>
       </h3>
     </div>
   );

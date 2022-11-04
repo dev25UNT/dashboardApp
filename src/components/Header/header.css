@@ -1,9 +1,11 @@
 .title {
   color: #0e1217;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 1000;
   font-size: 48px;
   line-height: 38px;
+  font-family: "Darker Grotesque";
+  padding-left: 1%;
 }
 .head {
   padding-right: 1%;

@@ -47,6 +47,8 @@
   align-items: center !important;
   display: flex !important;
   text-align: center !important;
+  justify-content: space-between !important;
+  padding: 3% !important;
 }
 .listItem {
   background: #faeae8 !important;
@@ -57,4 +59,12 @@
 
 .card > .list-group {
   border-top: none !important;
+}
+.colorEllipse {
+  width: 6px;
+  height: 6px;
+  left: 1318px;
+  top: 689px;
+  border-radius: 50%;
+  background: #fbe18b;
 }

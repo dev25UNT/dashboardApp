@@ -3,7 +3,7 @@ import "./emailSection.css";
 import chiron from "../../assets/icons/chironRight.svg";
 import e1 from "../../assets/icons/email1.svg";
 
-const EmailSection = () => {
+const EmailSection = ({ emailData }) => {
   const [eId, setId] = useState(1);
 
   const emailClicked = (e) => {
@@ -18,24 +18,22 @@ const EmailSection = () => {
           More <img src={chiron} />
         </span>
       </div>
-      {[1, 2, 3].map((item, index) => {
-        console.log(index);
-        console.log(eId, "eId");
+      {emailData.map((item, index) => {
         return (
           <div
             className={
               eId == index ? "emailInfo emailInfoClicked" : "emailInfo"
             }
             id={index}
-            key={item}
+            key={index}
             onClick={(e) => emailClicked(e)}
           >
             <div className="emailPerson">
-              <img src={e1} />
-              <h3 className="eName">Elizabeth</h3>
+              <img src={item.image} />
+              <h3 className="eName">{item.text1}</h3>
             </div>
-            <p className="mstatus">Meeting Scheduled</p>
-            <p className="mtime">2.24PM</p>
+            <p className="mstatus">{item.text2}</p>
+            <p className="mtime">{item.text3}</p>
           </div>
         );
       })}

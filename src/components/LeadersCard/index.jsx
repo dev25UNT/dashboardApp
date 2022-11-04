@@ -6,7 +6,7 @@ import "./leaderCard.css";
 import chir from "../../assets/icons/chironRight.svg";
 import leader1 from "../../assets/icons/leader1.svg";
 
-const LeaderCard = () => {
+const LeaderCard = ({ leadData }) => {
   return (
     <Card className="leaderCard">
       <Row className="leaderRow">
@@ -21,21 +21,24 @@ const LeaderCard = () => {
         </Col>
       </Row>
       <ListGroup className="list-group-flush">
-        {[1, 2, 3, 4].map(() => {
+        {leadData.map((item, index) => {
           return (
             <ListGroup.Item className="listItem">
               <Row>
                 <Col xs={8}>
                   <div className="mainCol">
-                    <img src={leader1} />
+                    <img src={item.image} />
                     <div>
-                      <h5 className="leaderName">Lucas</h5>
+                      <h5 className="leaderName">{item.text1}</h5>
                       <h5 className="status">Meeting Scheduled</h5>
                     </div>
                   </div>
                 </Col>
                 <Col xs={4}>
-                  <Button className="btnLeader">34056</Button>
+                  <Button className="btnLeader">
+                    <img src={item.icon}></img>
+                    {item.text2}
+                  </Button>
                 </Col>
                 {/* <Col></Col> */}
               </Row>
