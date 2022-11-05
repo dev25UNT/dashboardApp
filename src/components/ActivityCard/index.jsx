@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./activityCard.css";
-import chiron from "../../assets/icons/chironRight.svg";
+import chiron from "../../assets/icons/chironDown.svg";
 import "../LeadersCard/leaderCard.css";
 import Union from "../../assets/icons/Union.svg";
 import Union1 from "../../assets/icons/Union1.svg";
@@ -10,9 +10,9 @@ import Union3 from "../../assets/icons/Union3.svg";
 import Union4 from "../../assets/icons/Union4.svg";
 import Union5 from "../../assets/icons/Union5.svg";
 import Union6 from "../../assets/icons/Union6.svg";
+import HourBox from "../HourBox/HourBox";
 
 const activityData = [
-  { image: Union, text: "M" },
   { image: Union, text: "M" },
   { image: Union1, text: "T" },
   { image: Union2, text: "W" },
@@ -21,6 +21,7 @@ const activityData = [
   { image: Union5, text: "S" },
   { image: Union6, text: "S" },
 ];
+
 const ActivityCard = ({ btnClicked }) => {
   return (
     <div className={btnClicked ? "activityCardOpen" : "activityCard"}>
@@ -31,14 +32,17 @@ const ActivityCard = ({ btnClicked }) => {
         </Button>
       </div>
       <div className="weekSection">
-        <div>
-          <h3 className="weekHours">24 Hours</h3>
-          <h3 className="weekHours">12 Hours</h3>
-          <h3 className="weekHours">0 Hours</h3>
-        </div>
+        {btnClicked && (
+          <div>
+            <h3 className="weekHours">24 Hours</h3>
+            <h3 className="weekHours">12 Hours</h3>
+            <h3 className="weekHours">0 Hours</h3>
+          </div>
+        )}
         {activityData.map((item, index) => {
           return (
             <div className="activityWeek">
+              {index == 3 && <HourBox />}
               <img src={item.image} />
               <p>{item.text}</p>
             </div>

@@ -8,12 +8,20 @@
 }
 .leaderRow {
   align-items: center !important;
+  display: flex;
+  width: 68%;
+  flex-wrap: nowrap !important;
 }
 .btnMain {
   background-color: white !important;
   border-radius: 16px !important;
   border-color: #fff !important;
   color: black !important;
+  width: 95px !important;
+  height: 30px !important;
+  align-items: center !important;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 .btnMain:hover {
   background-color: white !important;

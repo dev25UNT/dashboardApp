@@ -34,8 +34,32 @@
   width: 30%;
   transition: all 1s;
 }
+.progressHead,
+.progressHead h3 {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 22px;
+  align-items: center;
+}
+.progressHead {
+  margin-bottom: 34px;
+}
+.more,
+.more h3 {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  align-items: center;
+  margin-inline: 20px;
+}
 
-@media screen and (max-width: 1026px) {
+@media screen and (max-width: 1318px) {
   .activitySection {
     flex-direction: column;
   }

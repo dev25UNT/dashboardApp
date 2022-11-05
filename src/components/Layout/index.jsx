@@ -32,6 +32,9 @@ import Ellips4 from "../../assets/icons/Ellips4.svg";
 import EmblaCarousel from "../Embla/EmblaCarousel";
 import inf1 from "../../assets/icons/info2img.svg";
 import inf2 from "../../assets/icons/info2img2.svg";
+import line1 from "../../assets/icons/line1.svg";
+import line2 from "../../assets/icons/line2.svg";
+import chironRight from "../../assets/icons/chironRight.svg";
 
 export const infoData = [
   { image: cardIcon, text1: "24", text2: "Days in training" },
@@ -61,6 +64,29 @@ const info2Data = [
     text1: "UI/UX Design",
     text2: "Advanced",
     text3: "52/120",
+  },
+];
+
+const info2DataSecondary = [
+  {
+    image: newInfo,
+    image2: inf1,
+    image3: line1,
+    text1: "English",
+    text2: "Level 1",
+    text3: "18/60",
+    date1: "24 June,22",
+    date2: "28 Aug,22",
+  },
+  {
+    image: book,
+    image2: inf2,
+    image3: line2,
+    text1: "UI/UX Design",
+    text2: "Advanced",
+    text3: "52/120",
+    date1: "1 Aug,22",
+    date2: "28 Nov,22",
   },
 ];
 
@@ -158,7 +184,14 @@ const Layout = () => {
               <Col xs={4}>
                 {btnClicked ? (
                   <div className="info2Container" style={{ width: "100%" }}>
-                    {info2Data.map((item, index) => {
+                    <div className="progressHead">
+                      <h3>In Progress</h3>
+                      <div className="more">
+                        <h3>More</h3>
+                        <img src={chironRight} />
+                      </div>
+                    </div>
+                    {info2DataSecondary.map((item, index) => {
                       return (
                         <Info2Card
                           text1={item.text1}
@@ -166,6 +199,9 @@ const Layout = () => {
                           text3={item.text3}
                           image={item.image}
                           image2={item.image2}
+                          image3={item.image3}
+                          date1={item.date1}
+                          date2={item.date2}
                           btnClicked={btnClicked}
                         />
                       );

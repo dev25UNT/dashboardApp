@@ -10,15 +10,12 @@ const LeaderCard = ({ leadData }) => {
   return (
     <Card className="leaderCard">
       <Row className="leaderRow">
-        <Col>
-          <h1>Leaders</h1>
-        </Col>
-        <Col>
-          <Button className="btnMain">
-            View All <img src={chir} />
-          </Button>
-          {/* <h1>Goof</h1> */}
-        </Col>
+        <h1>Leaders</h1>
+
+        <Button className="btnMain">
+          View All <img src={chir} />
+        </Button>
+        {/* <h1>Goof</h1> */}
       </Row>
       <ListGroup className="list-group-flush">
         {leadData.map((item, index) => {

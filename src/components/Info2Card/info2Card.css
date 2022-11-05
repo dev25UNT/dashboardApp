@@ -8,10 +8,25 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 4%;
+  margin-bottom: 34px;
 }
 .info2Head {
   display: flex;
+  justify-content: space-between;
+}
+.date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  /* display: flex; */
+  /* align-items: flex-end; */
+
+  color: #0e1217;
+}
+.info2Head2 {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .btnLeader2 {
